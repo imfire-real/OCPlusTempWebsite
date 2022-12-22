@@ -77,7 +77,7 @@ END OF STYLING DEFAULT OBJECTS
 
 /* Hero section */
 .hero {
-  height: 100vh;
+  min-height: 120vh;
   box-sizing: border-box;
 
   display: grid;
@@ -211,6 +211,7 @@ END OF STYLING DEFAULT OBJECTS
 
 .carosuel li {
   display: inline-block;
+  position: relative;
   width: 20vw;
   text-align: left;
   box-sizing: border-box;
@@ -298,8 +299,18 @@ END OF STYLING DEFAULT OBJECTS
 
 .buttons button, .buttons .button {
   display: inline-block;
-  margin-right: 1em;
-  margin-bottom: 1em;
+  /* margin-right: 1em;
+  margin-bottom: 1em; */
+
+  color: #000; /* safari colors button text blue so this prevents it */
+}
+
+.buttons {
+  padding: 5%;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
 }
 
 .install::before {
